@@ -7,6 +7,7 @@ import Toggle from './Toggle';
 import ParentComponent from './ParentComponent';
 import Greeting from './Greeting';
 import TaskList from './TaskList';
+import MyButton from './MyButton';
 
 function App() {
   const items=[{
@@ -19,13 +20,14 @@ function App() {
   }]
   return (
      <>
-     {/* <ItemList items={items}/> */}
-     {/* <Counter/> */}
-     {/* <UserData/> */}
-     {/* <Toggle/> */}
-     {/* <ParentComponent/> */}
-     {/* <Greeting/> */}
+     <ItemList items={items}/>
+     <Counter/>
+     <UserData/>
+     <Toggle/>
+     <ParentComponent/>
+     <Greeting/>
      <TaskList/>
+     <MyButton/>
      </>
   );
 }
